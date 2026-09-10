@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مستشفى فلسطين-صنعاء</title>
+  <link rel="stylesheet" href="12.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="mailto:palestinehospital.com" class="logo"><img id="logo" src="Gallery/logo.jpg"
+        alt="The  palestine Hospital"></a>
+
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#section1">الصفحة الرئيسية</a></li>
+        <li><a href="#section2">من نحن</a> </li>
+        <li><a href="#Services">الخدمات</a></li>
+        <li><a href="#Departments">الاقسام</a></li>
+        <li><a href="#Doctors">الاطباء</a></li>
+        <li><a href="#Contact">تواصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+ 
+ 
+ 
+ 
+ 
+  <section id="section1">
+    <link rel="stylesheet" href="section1.css">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="text" style="background-image: url(Gallery/background.JPG);background-size: 100% 100%;">
+          <div class="anime">
+            <p style="align-items: center;"> إذا كنت تبحث عن مستشفى لعمليات توليد آمنه </p>
+            <p style="align-items: start;"> فانت في المكان الصحيح
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="text" style="background-image: url(Gallery/Emergency.JPG);background-size: 100% 100%;">
+          <div class="anime">
+            <p style="align-content: center;"> إذا اصيبت بحادث</p>
+            <p style="align-items: start;"> فعليك الاسراع الى الطوارئ من اجل الاسعافات الاولية
+            </p>
+          </div>
+          <!-- <div class="numbertext">2 / 3</div> -->
+        </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div class="text"
+          style="background-image: url(Gallery/Care\ Baby\ 2.JPG);background-repeat: no-repeat;background-size: 100% 100%;">
+          <div class="anime">
+            <p style="align-content: center;"> إذا كنت تبث عن رعاية لطفلك بعد الولاده</p>
+            <p style="align-items: start;"> يوجد لدينا حضانه مزودة بأحدث الاجهزة
+            </p>
+          </div>
+          <!-- <div class="numbertext">3 / 3</div> -->
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <br>
+  </section>
+
+  <section id="section2">
+
+    <div id="abouttitle">
+      <h2>من نحن</h2>
+      <p>نحن احد المستشفيات الحكومية في صنعاء اسس المستشفى في عام 2008 .حيث يوجد فيه العديد من الاقسام مثل العيادات
+        والعنايات المركزة ومركز العزل .ويمتلك كادر من افضل الاطباء في الجمهورية وبأسعار مناسبة للمواطنين. </p>
+    </div>
+
+    <div style="display: flex;flex-wrap: wrap;">
+      <div id="aboutimg">
+        <img src="Gallery/background.JPG" style="width: 100%;" alt="this is hospetale">
+      </div>
+      <div class="abouttitle">
+        <h3>كان له دور بارز اثناء الحرب </h3>
+        <p>
+          فقد عمل كأول مركز لأستقبال الجرحى من الجبهات الداخلية الشرقية مثل نهم والجوف ومأرب
+        </p>
+        <ul>
+          <li>قام بدور فعال اثناء جائحت كورونا فكان احد اهم مراكز العزل في العاصمة</li>
+          <li>يعد من افضل المستشفيات الحكومية للامومة والطفولة ورعاية الحوامل</li>
+          <li>يملك قسم لتشخيص سرطان الثدي المبكر ومعالجة وهو من اخر الاقسام التي تم افتتاحها</li>
+        </ul>
+        <p>
+          ... في قسم العيادات يوجد العديد من العيادات مثل عيادة الاسنان وعيدة انف واذن وحنجره وعيادة فحص وعلاج النظر
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <!-- ******************************************************************** -->
+  <div id="Services" style="
+      text-align: center;
+       display: block;
+       direction: rtl;
+        padding: 20px;"><br><br><br>
+    <h1>الخدمات</h1>
+  </div>
+
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 250px;
+      display: block;
+      margin: 4% 14%;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .card h1,
+    p {
+      padding: 10px;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+  </style>
+  <!-- <script src="..//تجريبي/1js.js"></script> -->
+  <div style="background-color: aliceblue; width: 100%;height: auto;display: inline-flex;flex-wrap: wrap;">
+    <div class="card">
+      <img src="Gallery/about.jpg" alt="Denim Jeans" style="width:100%;height: 200px;">
+      <h1>خدمات مجانية</h1>
+      <p class="price"><del>$19.99</del></p>
+      <p>نحن نملك العديد من الخدمات او العمليات المجانية لمعرفة الخدمات المجانية اضغط على</p><br><br>
+      <p><a href="mailto:palestinehospital.com"><button>تواصل</button></a></p>
+    </div>
+    <div class="card">
+      <img src="Gallery/logo.jpg" alt="Denim Jeans" style="width:100%;height: 200px;">
+      <h1>خدمات غير مجانية</h1>
+      <p class="price">$19.99</p>
+      <p>ويوجد ايضا خدمات وعمليات غي مجانية اي مدفوعه لمعرفة العمليات او الخدمات المدفوعة اضغط على</p>
+      <p><a href="mailto:palestinehospital.com"><button>تواصل</button></a></p>
+    </div>
+  </div>
+  <!-- *********************************************** -->
+  <section style="height: 600px;width: 100%;background-color: aliceblue;">
+    <div id="Departments" class="h1">
+      <h1>الاقسام</h1>
+    </div>
+    <link rel="stylesheet" href="1css.css">
+    <script src="1jss.js"></script>
+
+    <!-- <section id="deb"> -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Nursery')">الحضانة</button>
+      <button class="tablinks" onclick="openCity(event, 'Generative Emergency')">طوارئ توليدية</button>
+      <button class="tablinks" onclick="openCity(event, 'Clinics')">العيادات</button>
+      <button class="tablinks" onclick="openCity(event, 'Baby Care')">عناية اطفال</button>
+      <button class="tablinks" onclick="openCity(event, 'Breast Cancer')">سرطان الثدي</button>
+    </div>
+    <div style="height: 300px;width: 70%;min-width: 50%; float: right;overflow: hidden;">
+      <div id="Nursery" class="tabcontent">
+
+        <div class="debp">
+          <h3>الحضانة</h3>
+          <p>نمتلك حضانة اطفال مزودة بأحدث الاجهزة وافضل الكوادر ذات الخبرة لرعاية الطفل بعد الولاده والاطفال </p>
+        </div>
+        <div class="debimg"><img src="Gallery/Nursery.JPG" alt="Nursery"></div>
+      </div>
+
+      <div id="Generative Emergency" class="tabcontent">
+
+        <div class="debp">
+          <h3>طوارئ توليدية</h3>
+          <p>يوجد طوارئ للتوليد في الحالات الطارئه وبكادر متمرس</p>
+        </div>
+        <div class="debimg"><img src="Gallery/Emergency.JPG" alt="Generative Emergency"></div>
+      </div>
+
+      <div id="Clinics" class="tabcontent">
+
+        <div class="debp">
+          <h3>العيادات</h3>
+          <p>يوجد العديد من العيادات للاطفال والامهات والاطباء الذي في العيادات من افضل الاطباء في الجمهورية</p>
+        </div>
+        <div class="debimg"><img src="Gallery/Clinics.JPG" alt="Clinics"></div>
+      </div>
+
+      <div id="Baby Care" class="tabcontent">
+
+        <div class="debp">
+          <h3>عناية اطفال</h3>
+          <p>يوجد عناية للاطفال الذي لم يكتمل نموهم والاطفال ذوي الاحتياجات الخاصة لما بعد الولادة</p>
+        </div>
+        <div class="debimg"><img src="Gallery/Care Baby.JPG" alt="Baby Care"></div>
+      </div>
+
+      <div id="Breast Cancer" class="tabcontent">
+
+        <div class="debp">
+          <h3>سرطان الثدي</h3>
+          <p>وهو من احدث الاقسام التى تم فتحها ويساعاد في تشخيص سرطان الثدي المبكر وعلاجة في الحالات المبكره</p>
+        </div>
+        <div class="debimg"><img src="Gallery/Cancor.JPG" alt="Breast Cancer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- *************************************************************************************-->
+  <div id="Doctors" style="text-align: center;
+  display: block;
+  padding-top: 100px;box-sizing: none;background-color: aliceblue;">
+    <h1>الاطباء</h1>
+  </div>
+  <section id="Doctors" style="background-color: aliceblue;">
+    <style>
+      .column {
+        float: left;
+        width: 33.3%;
+        height: 500px;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        height: 100%;
+      }
+
+      .container {
+        padding: 0 16px;
+        height: 100px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      .row .column .card img {
+        border: 1px solid #000;
+        width: 100%
+      }
+
+      .column .card img:hover {
+        transform: scale(1);
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    </style>
+
+    <h2>بعض من افضل الاطباء في المستشفى</h2>
+    <p>بعض المعلومات عنهم والشهادات التى يمتلكونها ومواعيد العمل والتخصص الذي يعمل فية</p>
+    <br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="Gallery/IMG_6824.JPG" alt="Jane" for="Dyahya">
+          <br><br><br><br>
+          <div class="container">
+            <h2>إيمان حسين جارالله</h2>
+            <p class="title">استشارية في التوليد وامراض النساء</p>
+            <p>مدربة البورد العربي بقسم الطوارئ التوليدية</p>
+            <p>ايام الدوام:سبت واربعاء</p>
+            <br><br><br>
+            <a href="#" name="button" id="Dyahya"><button class="button">Contact</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <a href=""><img src="Gallery/IMG_6830.JPG" alt="Mike"></a>
+          <br><br><br><br>
+          <div class="container">
+            <h2>امل عصام المالكي</h2>
+            <p class="title">استشارية في التوليد وامراض النساء</p>
+            <p>مدربة البورد العربي دمشق والبورد العربي عمان الاردن</p>
+            <p>ايام الدوام:سبت وثلاثاء وخميس</p>
+            <br><br><br>
+            <a href=""><button class="button">Contact</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="Gallery/IMG_6828.JPG" alt="John">
+          <br><br><br><br>
+          <div class="container">
+            <h2>امل الزوعري</h2>
+            <p class="title">اخضائية نساء وتوليد</p>
+            <p>ماجستير مهني في التوليد وامراض النساء </p>
+            <p>ايام الدوام:الثلثاء</p>
+            <br><br><br>
+            <a href=""><button class="button">Contact</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="Gallery/testimonials-3.jpg" alt="Jane">
+          <div class="container">
+            <h2>وائلة العبسي</h2>
+            <p class="title">اخضائية نساء وتوليد </p>
+            <p>ماجستير مهني في التوليد وامراض النساء</p>
+            <p>ايام الدوام: الجمعة</p>
+            <br>
+            <a href=""><button class="button">Contact</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="Gallery/testimonials-4.jpg" alt="Jane">
+          <div class="container">
+            <h2>علي المغربي</h2>
+            <p class="title">طبيب اسنان </p>
+            <p>ماجستير مهني في طب الاسنان</p>
+            <p>ايام الدوام:سبت وثلثاء وخميس</p>
+            <br><br>
+            <a href=""><button class="button">Contact</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="Gallery/testimonials-5.jpg" alt="Jane" id="yahya">
+          <div class="container">
+            <h2>محمد صالح</h2>
+            <p class="title">طبيب عيون</p>
+            <p>ماجستير مهني في طب العيون</p>
+            <p>ايام الدوام:احد واثنين وخميس</p>
+            <br><br>
+            <a href=""><button class="button" for="yahya">Contact</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><br><br><br>
+  <!-- ************************************************ -->
+
+
+  <section style="margin-top: 50px;">
+    <style>
+      /* Position the image containerlast (needed to position the left and right arrows) */
+      .containerlast {
+        position: relative;
+        height: auto;
+      }
+
+      /* Hide the images by default */
+      .myGollarylast {
+        text-align: center;
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursorinGolast {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .previnGolast,
+      .nextinGolast {
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "nextinGolast button" to the right */
+      .nextinGolast {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertextinGollarylast {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .captionlast-containerlast {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .rowinGolast:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .columninGolast {
+        float: left;
+        width: 16.66%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demolast {
+        opacity: 0.6;
+      }
+
+      .activelast,
+      .demolast:hover {
+        opacity: 1;
+      }
+    </style>
+    <script>
+      var slideIndexlast = 1;
+      showSlideslast(slideIndexlast);
+
+      // Next/previous controls
+      function plusSlideslast(n) {
+        showSlideslast(slideIndexlast += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlidelast(n) {
+        showSlideslast(slideIndexlast = n);
+      }
+
+      function showSlideslast(n) {
+        var x;
+        var slideslast = document.getElementsByClassName("myGollarylast");
+        var dotslast = document.getElementsByClassName("demolast");
+        var captionTextlast = document.getElementById("captionlast");
+        if (n > slideslast.length) { slideIndexlast = 1 }
+        if (n < 1) { slideIndexlast = slideslast.length }
+        for (x = 0; x < slideslast.length; x++) {
+          slideslast[x].style.display = "none";
+        }
+        for (x = 0; x < dotslast.length; x++) {
+          dotslast[x].className = dotslast[x].className.replace(" activelast", "");
+        }
+        slideslast[slideIndexlast - 1].style.display = "blocklast";
+        dotslast[slideIndexlast - 1].className += " activelast";
+        captionTextlast.innerHTML = dotslast[slideIndexlast - 1].alt;
+      }
+    </script>
+    <div id="Services" style="
+text-align: center;
+display: block;
+padding: 0;">
+      <h1>بعض صور للمستشفى</h1>
+    </div>
+
+    <div class="containerlast">
+
+      <!-- Full-width images with number text -->
+      <div class="myGollarylast">
+        <div class="numbertextinGollarylast">1 / 6</div>
+        <img src="Gallery/IMG_6832.JPG" style="width:75%;height: 500px;">
+      </div>
+
+      <div class="myGollarylast">
+        <div class="numbertextinGollarylast">2 / 6</div>
+        <img src="Gallery/logo.jpg" style="width:75%;height: 500px;">
+      </div>
+
+      <div class="myGollarylast">
+        <div class="numbertextinGollarylast">3 / 6</div>
+        <img src="Gallery/logo.jpg" style="width:75%;height: 500px;">
+      </div>
+
+      <div class="myGollarylast">
+        <div class="numbertextinGollarylast">4 / 6</div>
+        <img src="Gallery/logo.jpg" style="width:75%;height: 500px;">
+      </div>
+
+      <div class="myGollarylast">
+        <div class="numbertextinGollarylast">5 / 6</div>
+        <img src="Gallery/logo.jpg" style="width:75%;height: 500px;">
+      </div>
+
+      <div class="myGollarylast">
+        <div class="numbertextinGollarylast">6 / 6</div>
+        <img src="Gallery/logo.jpg" style="width:75%;height: 500px;">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="previnGolast" onclick="plusSlideslast(-1)">&#10094;</a>
+      <a class="nextinGolast" onclick="plusSlideslast(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="captionlast-containerlast">
+        <p id="captionlast"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="rowinGolast">
+        <div class="columninGolast">
+          <img class="demolast cursorinGolast" src="Gallery/Brith Emergency.JPG" style="width:100%;height: 100;"
+            onclick="currentSlidelast(1)" alt="طوارئ توليدية">
+        </div>
+        <div class="columninGolast">
+          <img class="demolast cursorinGolast" src="Gallery/Malnutrition.JPG" style="width:100%"
+            onclick="currentSlidelast(2)" alt="سوء التغذية">
+        </div>
+        <div class="columninGolast">
+          <img class="demolast cursorinGolast" src="Gallery/pharmacy.JPG" style="width:100%"
+            onclick="currentSlidelast(3)" alt="الصيدلية">
+        </div>
+        <div class="columninGolast">
+          <img class="demolast cursorinGolast" src="Gallery/Care.JPG" style="width:100%" onclick="currentSlidelast(4)"
+            alt="العناية">
+        </div>
+        <div class="columninGolast">
+          <img class="demolast cursorinGolast" src="Gallery/Labs.JPG" style="width:100%" onclick="currentSlidelast(5)"
+            alt="المختبرات">
+        </div>
+        <div class="columninGolast">
+          <img class="demolast cursorinGolast" src="Gallery/sleep.JPG" style="width:100%" onclick="currentSlidelast(6)"
+            alt="رقود نساء">
+        </div>
+      </div>
+    </div>
+ 
+  </section>
+  <footer style="height: auto;width: 100%;padding: 10px;background-color: #f2f2f2;">
+    <div id="Contact" class="h1">
+      <h1>للتواصل بنا</h1>
+      <h4>يمكنك التواصل بنا من خلال احد الطرق الاتية</h4>
+    </div>
+    <div class="map" style="width: 70%;text-align: center;"><iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.694051812719!2d44.24439412113759!3d15.447055568934951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603d800c2f3e8a3%3A0xb7226f8fa8c00c8f!2z2YXZg9iq2KjYqSDZgdmE2LPYt9mK2YY!5e0!3m2!1sar!2s!4v1681916235334!5m2!1sar!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe></div> <br><br><br>
+    <div style="width: 100%;height: auto;background-color: #444;margin: 0;padding: 0;">
+      <div><a href="mailto:facebook.com">
+          <h2>facebook</h2>
+        </a></div><br><br><br>
+      <div>
+        <h2>What's App:<a href="phone:775599709">775599709</a></h2>
+      </div><br><br><br>
+      <div><a href="mailto:enstgarm.com">
+          <h2>enstgarm</h2>
+        </a></div><br><br><br>
+      <div><a href="https://goo.gl/maps/8nc732JGFZC4oiiq8">
+          <h2>google Map</h2>
+        </a></div><br><br><br>
+    </div>
+  </footer>
+</body>
+
+</html>
